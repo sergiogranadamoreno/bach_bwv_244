@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1187.4">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 18.0px; font: 12.0px Times; background-color: #eeeeee}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Times}
+    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Courier; min-height: 14.0px}
+    p.p9 {margin: 0.0px 0.0px 5.0px 30.0px; font: 12.0px Times}
+    li.li5 {margin: 0.0px 0.0px 5.0px 0.0px; font: 12.0px Times}
+    span.s1 {text-decoration: underline ; color: #0000ee}
+    span.s2 {color: #0000ee}
+    table.t1 {margin: 6.0px 0.0px 6.0px 30.0px; border-style: solid; border-width: 1.0px 1.0px 1.0px 1.0px; border-color: #000000 #000000 #000000 #000000}
+    td.td1 {width: 57.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td2 {width: 797.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td3 {width: 57.0px; background-color: #eeeeee; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td4 {width: 797.0px; background-color: #eeeeee; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td5 {width: 44.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td6 {width: 810.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td7 {width: 44.0px; background-color: #eeeeee; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td8 {width: 810.0px; background-color: #eeeeee; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td9 {width: 32.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td10 {width: 822.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td11 {width: 32.0px; background-color: #eeeeee; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    td.td12 {width: 822.0px; background-color: #eeeeee; margin: 0.5px 0.5px 0.5px 0.5px; padding: 2.0px 2.0px 2.0px 2.0px}
+    ol.ol1 {list-style-type: decimal}
+  </style>
+</head>
+<body>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Abcweb</b></h3>
+<p class="p2">You can either start <i>abcweb</i> from <a href="http://wim.vree.org/js/abcweb.html"><span class="s1">http://wim.vree.org/js/abcweb.html</span></a> or from a local copy of this file on your computer.</p>
+<p class="p2"><i>Abcweb</i> also supports loading and saving on dropbox, but only when you start from the website. A local copy will not work with dropbox and only load/save files locally. How to use <i>abcweb</i> on a computer without internet connection is explained at <span class="s1">the end</span> of this page.</p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Opening score and media files</b></h3>
+<p class="p2">With the <i>score file</i> button you can open a MusicXml file (or an <a href="https://en.wikipedia.org/wiki/Abc_notation"><span class="s1">ABC</span></a> text file) from the local computer (PC). When the "<i>use dropbox</i>" option is checked the <i>score file</i> button opens a Dropbox Chooser. This allows you to load score files directly from your dropbox. The same holds for the <i>media file</i> button. Normally local files are opened, but with dropbox enabled you can load the media from your dropbox. For video files there is a third possibility: "<i>use youtube</i>". With this option checked the <i>media file</i> button changes into a text field where you can enter the youtube-id of the video you want to display. With both "<i>use dropbox</i>" and "<i>use youtube</i>" checked, you can load the score file from dropbox and the video from youtube.</p>
+<p class="p2">When you have opened (and possibly synchronized) a score file and a media file you can save the result into a <span class="s1">preload file</span>. This preload file will be saved locally or, when "<i>use dropbox</i>" is checked in your dropbox. Such a preload file can be opened with the <i>score file</i> button or by specifying it in the URL as explained in the section on <span class="s1">saving and using a preload file</span>. Opening a preload file loads score an media and all settings as the were at the time of saving.</p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Speed</b></h3>
+<p class="p2">Two buttons to the right of the media player change the play back speed. The button called <i>plus</i> increases and the button called <i>min</i> decreases the speed. Normal speed is 1.0. Each button click changes this factor by 0.1. The speed factor can range between 0.5 and 2.0. Synchronization (explained below) works at all speeds and can be done more precisely with lower speed settings.</p>
+<p class="p3"><br></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Looping</b></h3>
+<p class="p2">When the loop box is checked, the first two clicks in the score set the left and right edge of the looping range. Each edge is marked with a bold red character: '<b>&lt;</b>' for the left side and '<b>&gt;</b>' for the right side. When clicking again in the score the loop marker closest to the click location is repositioned.</p>
+<p class="p2">When both range markers are placed, play back will continuously loop between these points. The loop range can still be adjusted by clicking in the score near one of the markers (also when playing). The loop mode is switched off by clearing the loop chekcbox. Both range markers will be retained and when you check the loop box again they will reappear (en be active immediately).</p>
+<p class="p3"><br></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Menu</b></h3>
+<p class="p2">Several settings can be changed with checkboxes via the menu. When you make a <span class="s1">preload file</span>, all settings are saved, except the "<i>enable sync</i>" setting.</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p2"><i>enable sync</i></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p2">Turns on <span class="s1">synchronization</span> mode. A <span class="s1">special panel</span> appears in the top right corner. This panel also contains the <span class="s2"><i>save button</i></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p2"><i>speed ctrl</i></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p2">Shows the <span class="s1">speed</span> buttons.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p2"><i>loop mode</i></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p2">Shows <span class="s1">loop mode</span> checkbox</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p2"><i>file buttons</i></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p2">Shows the buttons to load score and media. Also shows the "<i>use dropbox</i>" checkbox</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p2"><i>no cursor</i></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p2">Hides the cursor when playing and shows the cursor when paused.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p2"><i>line cursor</i></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p2">Displays a line cursor in the score in stead of the blue measure shading.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p2"><i>center player</i></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p2">When set the player is centered on the page. When not set the player together with the speedbuttons are centered</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p2"><i>center score</i></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p2">Centers the score on the page. When not set the score is left aligned.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p2"><i>hide player</i></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p2">Hides the media player and resizes the height of the button area to zero. (score aligns to top of page)</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p2"><i>autoscale</i></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p2">Resizes the score to the width of the browser page</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p2"><i>skip repeats</i></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p2">Skips playing repeated sections. Is only effective when enabled <i>before</i> loading a score or <span class="s1">preload file</span>. Has no effect after loading.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p2"><i>count in</i></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p2">Displays a count down before starting playback. The tempo of the count-in is the average of the tempo in the next three measures. Takes speed setting into account. The current meter determines the number of beats that is counted down.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p2"><i>metronome</i></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p2">Displays a beat number count-down while playing. The beat tempo is that of the current measure, taking speed control into account.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p2"><i>help</i></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p2">Shows a panel with help info. The panel is hidden when the mouse leaves the panel area</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2">Two settings can only be changed by manually editing a <span class="s1">preload file</span>:</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td1">
+        <p class="p2"><i>msc_credits</i></p>
+      </td>
+      <td valign="top" class="td2">
+        <p class="p2">The contents of <i>msc_credits</i> will be displayed next to, and to the right of, the media player. The setting is made by adding the following string assignment to the preload file:</p>
+        <p class="p4"><span class="Apple-converted-space">    </span>msc_credits = "any html formatted credit text goes here"</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td3">
+        <p class="p2"><i>opacity</i></p>
+      </td>
+      <td valign="top" class="td4">
+        <p class="p2">Sets the opacity of the measure shading (0.0 is no shading, default: 0.2, solid color is 1.0). This setting is in the line that looks like:</p>
+        <p class="p4"><span class="Apple-converted-space">    </span>opt = {"jump":0, ..., "opacity":0.2, ...,"btns":0};</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Synchronization</b></h3>
+<p class="p2">To synchronize a live performance to the score you have to mark the <span class="s2"><i>enable sync</i></span> checkbox. A special area becomes visible which shows some information related to synchronization:</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p2"><i>duration measure</i></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p2">The time in seconds that the measure stays shaded (or the time that it takes for the line cursor to traverse the measure).</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td7">
+        <p class="p2"><i>media offset</i></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p2">The time in seconds from the moment that the media starts playing until the cursor/shading starts moving. Some media files do not start at the point where the score starts. This time accounts for the difference. A positive offset means that the media starts earlier than the the score (which is the most common situation). A negative offset means that the score cursor starts before the media.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p2"><i>wait offset</i></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p2">With this option checked the media starts playing but the cursor (and score) are halted. A click in the first measure then unchecks this option and the cursor starts moving again (starting at the first measure) to allow further synchronization.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td7">
+        <p class="p2"><i>jump</i></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p2">When the jump box is checked, and you click in a measure, play back jumps back one measure to let you review the timing accuracy of your click (or rather the browser latency). Because this happens at each click, it is turned off by default.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p2"><i>import</i></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p2">Imports timing data from another <span class="s1">preload file</span>. When separate parts of the same score have to be synchronized, one only has to synchronize one part and import that data into the other parts. This not only saves work but is essential when these parts have to play <span class="s1">synchronized in multiple devices</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td7">
+        <p class="p2"><i>save</i></p>
+      </td>
+      <td valign="top" class="td8">
+        <p class="p2">Saves score, settings and synchronization data to a file, called the <span class="s1">preload file</span>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td5">
+        <p class="p2"><i>scramble</i></p>
+      </td>
+      <td valign="top" class="td6">
+        <p class="p2">The score data in the preload file will be scrambled. When such a scrambled preload file is loaded, <i>abcweb</i> disables the main menu, the context menu and drag/drop. This makes it more difficult for a user to retrieve the ABC score data.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2">You can follow two methods, while you can switch between both methods at any time. The first method is probably the easiest but not the most accurate:</p>
+<p class="p2">- <i>clicking while playing</i></p>
+<p class="p2">You turn on play back and click in a measure as soon as you hear the first beat of that measure. By clicking in a measure you synchronize the *first* beat of that measure to the audio. You do not need to click in every measure, because, as soon as you click, the program calculates the current tempo and assumes the music keeps playing with that tempo. So you only need to click in a measure when the deviation between the score cursor and the audio becomes too large.</p>
+<p class="p2">Clicking in the first measure synchronizes the first beat (of the music) to (the first note) in the media file. This sets the, so called, <span class="s1">offset of the media file</span>. When the score belongs to a fragment that starts late in the media file, one does not want the cursor moving before playback arrives at the fragment. With option <span class="s2"><i>wait offset</i></span> checked you can start playback while the cursor and score stay halted. When play back arives at the position of the first measure, a click in that measure unchecks this option and the cursor starts moving to allow further synchronization.<span class="Apple-converted-space"> </span></p>
+<p class="p2">When the <span class="s2"><i>jump box</i></span> is checked (above the save button), playback jumps one measure backwards at every synchronization click. The idea is that you can review how well your click was timed.</p>
+<p class="p2">- <i>using keys while paused</i></p>
+<p class="p2">Although you can easily synchronize playback by just clicking in a measure at the right time, a more precise result can be obtained when using the keyboard short cuts. Proceed as follows:</p>
+<ol class="ol1">
+  <li class="li5">Make sure your score has at least one tempo marking (at the beginning) with approximately the right tempo of the live performance. You will then start off with at least an approximately synchronized score.</li>
+  <li class="li5">Stop play back (p). Switch on the <span class="s1">line cursor</span> (l).<br>
+Go back to the first measure ([) and look at the <span class="s1">offset time</span> (it will be zero in the beginning). Use the keys <i>control-</i><b><i>.</i></b> and <i>control-</i><b><i>,</i></b> to increase or decrease this offset time by 0.1 sec per keystroke. Adjust the offset until the music starts at the same time as the line cursor starts moving. The offset can assume (large) negative values when the music starts late in the media file.</li>
+  <li class="li5">Go to the first measure (with play back halted!) where you find that the cursor deviates too much from the music. Use the keys <b>.</b> or <b>,</b> to increase or decrease the <span class="s2"><i>measure duration</i></span>. When the cursor is too late in the measure you have to decrease the duration. You may also want to decrease the measure before the one where you find the deviation too much. When the cursor is too far ahead relative to the music (too fast) you should increase the duration of the measure.</li>
+  <li class="li5">Frequently stop playback (p), navigate a couple of measures backwards ([), and restart playback (p) to judge synchronization. Using the line cursor is probably better for this purpose than measure shading.</li>
+  <li class="li5">When all measures are synchronized you can save the results (w or <span class="s1">save button</span>) to a preload file. The preload file can have any name, but should end with ".js" as it is a regular javascript file.</li>
+</ol>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Saving and using a preload file</b></h3>
+<p class="p2"><i>abcweb</i> can preload score data, media file, synchronization data and several settings from a special javascript file. Such a "<i>preload file</i>" is made by pressing the <span class="s1">save button</span> in <i>abcweb</i> (visible when the <span class="s1">synchronisation option</span> is checked).</p>
+<p class="p2">To use a preload file you can either load it like a score file with the <i>score file</i> button or you can add the name of the preload file as a parameter in the URL that starts <i>abcweb</i>.</p>
+<p class="p2">For example, when you use a webserver:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>http://your.domain/abcweb.html?preload_file.js</p>
+<p class="p2">or when the preload is on dropbox:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>http://wim.vree.org/js/abcweb.html?https://www.dropbox.com/s/z5swu2kum6vorxv/preload_file.js</p>
+<p class="p2">or when opening <i>abcweb</i> as a local file:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>file:///path/to/abcweb.html?preload_file.js</p>
+<p class="p2">The latter example assumes that the preload file is in the same directory as <i>abcweb.html</i>. When it is in another location, the relative path to the preload file should be given. As an example, suppose the following directory layout:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>/root</p>
+<p class="p4"><span class="Apple-converted-space">    </span>/score/abcweb.html</p>
+<p class="p4"><span class="Apple-converted-space">          </span>/media/example.mp3</p>
+<p class="p4"><span class="Apple-converted-space">          </span>/preload/example.js</p>
+<p class="p2">Then <i>abcweb.html</i> can be opened in the browser using the following (local file) URL:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>file:///score/abcweb.html?../preload/example.js</p>
+<p class="p2">The preload file is a regular javascript file. It only contains a couple of assignments. The first assignment sets the media file to load. When <i>example.js</i> is freshly saved using <i>abcweb</i> it will look as follows:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>media_file = "example.mp3";</p>
+<p class="p2">Note that only a file name is specified and no path. Due to security restrictions in the browser, <i>abcweb</i> cannot save the correct path. This means that you have to <b>add the path manually</b> into <i>example.js</i>. With the example directory tree from above, the first assignment should read:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>media_file = "../media/example.mp3";</p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Preload files with Dropbox</b></h3>
+<p class="p2">When saving with dropbox a preload file is created which already contains the correct shared link to the media file. No manual changes are necessary. The preload file is used by specifying the shared link to the preload file as parameter. For example:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>http://wim.vree.org/js/abcweb.html?https://www.dropbox.com/s/kb5d2uyletj4exh/gadma_2.js</p>
+<p class="p2">This example loads abcweb from its website and loads the preload file <i>gadma_2.js</i> from the user's dropbox. When you obtain a shared link from dropbox it ends with ?dl=0. You can safely omit this extra parameter, because abcweb removes it anyway (if you leave it).</p>
+<p class="p2">In stead of the full URL of a preload file on Dropbox an abbreviation can be used. For instance, the example above can be abbreviated to:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>http://wim.vree.org/js/abcweb.html?d:kb5d2uyletj4exh/gadma_2.js</p>
+<p class="p2">The string "d:" at the beginning of the preload parameter is expanded to "https://www.dropbox.com/s/". You can also use this abbreviation with other files in the URL, see <span class="s1">parameters</span>.<span class="Apple-converted-space"> </span></p>
+<p class="p6">A preload file on DropBox must always have extension <b>.js</b> otherwise it will not load.</p>
+<p class="p7"><b>Operation without internet connection</b></p>
+<p class="p2">When you want to run <i>abcweb</i> on a computer <i>without</i> internet connection you need to open the file <i>abcweb_local.html</i> in the browser. Also you have to put four extra javascript files (that are normally loaded from the internet) into the same directory as <i>abcweb_local.html</i>:</p>
+<p class="p4"><span class="Apple-converted-space">    </span>jquery-1.11.0.min.js</p>
+<p class="p4"><span class="Apple-converted-space">    </span>abc2svg-1.js</p>
+<p class="p4"><span class="Apple-converted-space">    </span>abcweb-min.js</p>
+<p class="p4"><span class="Apple-converted-space">    </span>xml2abc-min.js</p>
+<p class="p2">All files are included in <a href="file:///Users/sergiogranadamoreno/Desktop/abcweb/abcweb_37/abcweb_37.zip"><span class="s1">abcweb_37.zip</span></a>.</p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Extra parameters in the URL</b></h3>
+<p class="p2">Abcweb.html recognizes several extra parameters in the URL:</p>
+<table cellspacing="0" cellpadding="0" class="t1">
+  <tbody>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p2"><i>file name</i></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p2">When you use a <i>file_name</i> as parameter in the URL, the file extension determines its intended use, i.e. media files should end with .ogg, .mp3, .webm or .mp4 and score files should end with .xml or .abc, filnally preload files should end with .js. For example, when using dropbox:</p>
+        <p class="p4"><span class="Apple-converted-space">    </span>http://wim.vree.org/js/abcweb.html?d:dropbox_id1/scorefile.xml&amp;d:dropbox_id2/mediafile.webm</p>
+        <p class="p2">or with your own webserver:</p>
+        <p class="p4"><span class="Apple-converted-space">    </span>http://your.domain/abcweb.html?relative_path/to/scorefile.xml&amp;relative_path/to/mediafile.webm</p>
+        <p class="p2">The first example uses abcweb from the standard location and loads the other files from your dropbox.</p>
+        <p class="p2">In the second example both score file and media file are located on <i>your.domain</i>, the same domain from where <i>abcweb.html</i> is opened. This causes <i>abcweb</i> to preload the score file and the media file from the server.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td11">
+        <p class="p2"><i>med=</i></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p2">To use a youtube identifier as URL parameter you need to specify <i>med=youtube_id</i>. For instance:</p>
+        <p class="p4"><span class="Apple-converted-space">    </span>http://wim.vree.org/js/abcweb.html?d:dropbox_id/scorefile.xml&amp;med=youtube_id</p>
+        <p class="p2">loads the youtube player with the identified video and gets the score from dropbox.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p2"><i>ip=</i></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p2">With the <i>ip=ip_number</i> parameter you specify the ip number of a WebSocket server on your local network. All instances of abcweb that are started with the same <i>ip=ip_number</i> parameter are playing synchronized with each other. This is useful to get a group of computers/tablets play the same score at precisely the same time. Each instance can start/stop playing and all others follow. Same for jumping to a different measure. See <span class="s1">Web Sockets</span> for more details on how the run the server.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td11">
+        <p class="p2"><i>mstr</i></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p2">The master parameter <i>mstr</i> makes one device the master of a group of synchronized devices. Only the master device can issue play/pause commands and position the playback. All other devices follow the master but cannot play/pause or jump to another measure.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p2"><i>nomed</i></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p2">Skips the loading of the media and aligns the score with the top of the page. On a synchronized device this option shows the score and the synchronized cursor, but does not load or play the media file.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td11">
+        <p class="p2"><i>dx.x</i></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p2">Inserts an initial latency of 0.xx seconds for all commands received on a synchronized device. This is useful if some devices of a synchronized group are much slower than others. For example, the simulated default player is much faster than the youtube player. A latency of 0.3 seconds is no exception, which can be compensated by adding d3 as paramter:</p>
+        <p class="p4"><span class="Apple-converted-space">    </span>http://.../abcweb.html?preload&amp;med=youtube_id&amp;ip=192.168.xx.xx&amp;mstr (master with slow youtube player)</p>
+        <p class="p4"><span class="Apple-converted-space">    </span>http://.../abcweb.html?preload&amp;ip=192.168.xx.xx&amp;nomed&amp;d3<span class="Apple-converted-space">            </span>(fast slaves with delay of 0.3 sec)</p>
+        <p class="p8"><span class="Apple-converted-space">    </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td9">
+        <p class="p2"><i>nb</i></p>
+      </td>
+      <td valign="top" class="td10">
+        <p class="p2">Hides the menu. The user cannot change anything. Of course it also prevents saving. To make this setting permanent in a preload file, you have to edit the preload file manually with a text editor. The setting is called <i>no_menu</i> and should be set to 1 to hide the menu:</p>
+        <p class="p4"><span class="Apple-converted-space">    </span>opt = {"jump":0,"no_menu":1,"nospd":true, ...</p>
+        <p class="p2">Note: a scrambled preload file implies this option.</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="top" class="td11">
+        <p class="p2"><i>tmr=n</i></p>
+      </td>
+      <td valign="top" class="td12">
+        <p class="p2">Sets the margin between the top of current music line and the bottom of the player to <i>n</i> pixels (default 0, which displays the current music line precisely adjacent to the player). This setting is saved in the preload file.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p class="p2"><i>Notes:</i></p>
+<p class="p9">The parameter <i>nb</i> is only interpreted when also a <i>preload file</i> or a <i>score file</i> is present in the URL.</p>
+<p class="p9">In stead of specifying a score and media <i>file name</i> parameter in the URL one can also (and better) use a preload file. But when granting access to a large collection of score files on a server, it may be preferable not to have to provide an extra preload file for every score/media file. <br>
+The advantage of using a preload file is that it also provides synchronization data and other preferences.</p>
+<p class="p9">You can <i>not</i> use score and media <i>file name</i> parameters in the URL when abcweb is started from the local file system on your pc (double click abcweb.html). A preload file, on the other hand, can <i>always</i> be used. Even when abcweb.html is opened from the local file system.</p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Multiple devices running abcweb synchronized (with Web Sockets)</b></h3>
+<p class="p2">When you have a group of tablets/phones/computers playing abcweb, it is possible to have these devices precisely synchronized. When one device starts playing all other devices start as well. When one device jumps to a different measure all devices jump at the same time. Hereby it is possible to have only one master who is able to perform play, pause or jump or to have a symmetrical situation where each device can issue these commands. Also it is possible to have only one device with both score and media files loaded while all other devices only have score and no media. The media-less devices still move the cursor synchronized with all others through the score.<span class="Apple-converted-space"> </span></p>
+<p class="p2">All this only requires one extra parameter in the URL: <span class="s2"><i>ip=ip_number</i></span>. It needs to be typed on each device to be synchronized. The <i>ip_number</i> in this parameter is the address of a computer/tablet/phone running the javascript program <i>abcSrv.js</i> (see <span class="s1">running abcSrv.js</span>).<span class="Apple-converted-space"> </span></p>
+<p class="p2">A group of devices synchronized with the <span class="s2"><i>ip=ip_number</i></span> parameter, behaves in a symmetrical fashion. Every device in the group can initiate a play/pause command, or jump to a different measure. One extra parameter: <span class="s1">"</span><span class="s2"><i>mstr</i></span><span class="s1">"</span> makes the device where this parameter is present the master of the group, disabling all others from issuing play/pause or jump commands. Only the master can now initiate play/pause of jump. For example:</p>
+<p class="p4">http://wim.vree.org/js/abcweb.html?some_preload.js&amp;ip=192.168.178.xx<span class="Apple-converted-space">      </span>(for all slave devices)</p>
+<p class="p4">http://wim.vree.org/js/abcweb.html?some_preload.js&amp;ip=192.168.178.xx&amp;mstr (for the master device)</p>
+<p class="p2">while the device with ip number 192.168.178.xx has to run <span class="s2"><i>abcSrv.js</i></span><span class="Apple-converted-space"> </span></p>
+<p class="p2">To run locally one would use:</p>
+<p class="p4">http://192.168.178.xx:8090/abcweb_local.html?some_preload.js&amp;ip=host<span class="Apple-converted-space">      </span>(for all slave devices)</p>
+<p class="p4">http://192.168.178.xx:8090/abcweb_local.html?some_preload.js&amp;ip=host&amp;mstr (for the master device)</p>
+<p class="p2">This works while <i>abcSrv.js</i> not only synchronizes the devices but also acts as a normal web server (on port 8090). In this case one needs all <span class="s1">abcweb files</span> to be present in the same directory where abcSrv.js is located. Also <i>some_preload.js</i> and its corresponding media file have to be there. This is because <i>abcSrv.js</i> uses its own directory as root directory for the http server it implements.<span class="Apple-converted-space"> </span></p>
+<p class="p2">Note the specal abbreviation <i>ip=host</i>. This short form of the <span class="s2"><i>ip=</i></span><span class="s1"> parameter</span> can only be used when the real ip number of the web socket server is already present (as host address) in the URL.</p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Running abcSrv.js</b></h3>
+<p class="p2"><i>AbcSrv.js</i> is included in: <a href="file:///Users/sergiogranadamoreno/Desktop/abcweb/abcweb_37/abcweb_37.zip"><span class="s1">abcweb_37.zip</span></a>. It is a javascript program that implements a simple http server and a special Web Socket server. The normal http server runs on port 8090 and the web socket server on port 8091. <i>Abcweb</i> expects the web socket server to be on port 8091.<span class="Apple-converted-space"> </span></p>
+<p class="p2">To run <i>abcSrv.js</i> you need to have <a href="http://nodejs.org/"><span class="s2"><i>Node</i></span></a> installed. <i>Node</i> is a javascript engine with unrestricted access to many underlying computer capabilities. Browsers can run javascript too, but they hide these capabilities almost completely (sandbox) and are of no use to implements servers.<span class="Apple-converted-space"> </span></p>
+<p class="p2">When you have <i>Node</i> installed you can start abcSrv.js with a command like:</p>
+<p class="p4"># nodejs abcSrv.js</p>
+<p class="p2">When started it prints the following output on the console:</p>
+<p class="p4">websocket server listening on port: 8091, address: 192.168.178.xx</p>
+<p class="p4">http server listening in port: 8090, adress: 192.168.178.xx</p>
+<p class="p4">web server root directory: /path/to/where/abcSrv.js/is/located/</p>
+<p class="p2">On a normal (i.e. not jailbroken) iPad, <i>abcSrv.js</i> has been tested using the app Touch Code Pro from iTunes. This app can load and run <i>abcSrv.js</i>, which turns the iPad into a simple http server and websocket server, so you can not only synchonize a group of other tablets but also serve the score an media locally, without connecting to the internet (using <span class="s1">abcweb_local.html</span>).</p>
+</body>
+</html>
